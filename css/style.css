@@ -635,10 +635,23 @@ body {
 .product__content {
   height: 38.75rem;
   overflow: hidden auto;
+  scrollbar-width: thin;
+  scrollbar-color: #224042 #006D78;
+}
+
+.product__content::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  /* округлось бегунка */
 }
 
 .product__img {
   padding-bottom: 100%;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
 }
 
 .control-panel {
