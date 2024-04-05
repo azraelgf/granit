@@ -548,7 +548,9 @@ body {
   overflow: hidden auto;
   display: -ms-grid;
   display: grid;
-  height: 37.5rem;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  height: 47.5rem;
   -ms-grid-columns: (13.75rem)[6];
   grid-template-columns: repeat(6, 13.75rem);
   gap: 4.375rem;
