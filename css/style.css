@@ -256,6 +256,24 @@ body {
   rotate: 90deg;
 }
 
+.main__video video,
+.main__video iframe,
+.main__video object,
+.main__video embed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -416,7 +434,6 @@ body {
 }
 
 .main {
-  background: url("../img/main-bg.png") no-repeat center/cover;
   padding: 0 6.25rem;
   position: relative;
   height: 100vh;
